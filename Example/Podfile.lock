@@ -1,0 +1,16 @@
+PODS:
+  - LoadPodspecError (0.1.0)
+
+DEPENDENCIES:
+  - LoadPodspecError (from `../LoadPodspecError.copy.podspec`)
+
+EXTERNAL SOURCES:
+  LoadPodspecError:
+    :path: "../LoadPodspecError.copy.podspec"
+
+SPEC CHECKSUMS:
+  LoadPodspecError: 872e03610eca50bea4af365c86ab19dfe192a95a
+
+PODFILE CHECKSUM: 7cd114851296c63496a7bf7de4a9aba95840f187
+
+COCOAPODS: 1.11.3
