@@ -18,14 +18,14 @@
 		2E0831B7C13E4863D6EB9D75E7C0E459 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		31D3D9F8D2E5730F8FC7890FA0B84798 /* LoadPodspecError-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LoadPodspecError-Info.plist"; sourceTree = "<group>"; };
 		364E3C0A2C677E839D8792B3C882B2B8 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LoadPodspecError/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		42AF3C5C103E20FB8A343E17EC06C613 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		42AF3C5C103E20FB8A343E17EC06C613 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4956D3D9CEC047DDB1531C2810E8E5D0 /* LoadPodspecError.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LoadPodspecError.modulemap; sourceTree = "<group>"; };
 		51CAEC50C221520F27F484922DE13A95 /* LoadPodspecError.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoadPodspecError.release.xcconfig; sourceTree = "<group>"; };
 		884B2250E35DA5D6620D6D24BA789E5E /* LoadPodspecError-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadPodspecError-prefix.pch"; sourceTree = "<group>"; };
 		B1EB2BADABD9DA435AB73B45FF7E4CC4 /* LoadPodspecError-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoadPodspecError-dummy.m"; sourceTree = "<group>"; };
 		B51E7F36366750834BFE6B0DF05643C8 /* LoadPodspecError.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoadPodspecError.debug.xcconfig; sourceTree = "<group>"; };
 		D11BEC08BDE7E9477A12645922E27B58 /* LoadPodspecError */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LoadPodspecError; path = LoadPodspecError.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F492E87FAA00F8A8C1A8C852F7EAD75D /* LoadPodspecError.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LoadPodspecError.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		F492E87FAA00F8A8C1A8C852F7EAD75D /* LoadPodspecError.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LoadPodspecError.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +146,8 @@
 		F7F6C7435979A1677D2A54631E447CA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 3E6D011B8027B9E8D2D473F68627403B /* Build configuration list for PBXProject "LoadPodspecError" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -312,7 +312,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
